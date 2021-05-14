@@ -1,6 +1,10 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 export default function LoginInput() {
+  useEffect(() => {
+    console.log('mounted')
+  }, [])
+
     return (
         <div>
             <input name="email" />
